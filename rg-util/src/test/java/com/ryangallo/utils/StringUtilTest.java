@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import com.ryangallo.gwtsafe.utils.StringUtil;
+
 public class StringUtilTest {
 
 	@Test
