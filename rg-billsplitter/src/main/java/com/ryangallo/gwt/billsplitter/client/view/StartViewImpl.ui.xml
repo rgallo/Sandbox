@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel styleName="container">
+		<div class="startView" style="text-align: center;">
+			<div class="title" style="padding-top: 175px;">
+				BillSplitter
+			</div>
+			<div class="caption" style="margin-bottom: 50px;">
+				Let's split some bills!
+			</div>
+			<g:Button ui:field="button" styleName="button">Let's go!</g:Button>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>
