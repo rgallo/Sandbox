@@ -5,29 +5,23 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.ryangallo.gwt.billsplitter.client.ClientFactory;
 import com.ryangallo.gwt.billsplitter.client.place.BillInputPlace;
-import com.ryangallo.gwt.billsplitter.client.place.StartPlace;
-import com.ryangallo.gwt.billsplitter.client.view.StartView;
+import com.ryangallo.gwt.billsplitter.client.view.BillInputView;
 
-public class StartActivity extends AbstractActivity implements StartView.Presenter {
+public class BillInputActivity extends AbstractActivity implements BillInputView.Presenter {
 
 	private ClientFactory factory;
 	private String token;
 
-	public StartActivity(StartPlace place, ClientFactory factory) {
+	public BillInputActivity(BillInputPlace place, ClientFactory factory) {
 		this.token = place.getToken();
 		this.factory = factory;
 	}
 
 	@Override
 	public void start(AcceptsOneWidget container, EventBus eventBus) {
-		StartView startView = factory.getStartView();
-		startView.setPresenter(this);
-		container.setWidget(startView);
-	}
-
-	@Override
-	public void goToBillInput() {
-		factory.goTo(new BillInputPlace(""));
+		BillInputView billInputView = factory.getBillInputView();
+		billInputView.setPresenter(this);
+		container.setWidget(billInputView);
 	}
 
 }

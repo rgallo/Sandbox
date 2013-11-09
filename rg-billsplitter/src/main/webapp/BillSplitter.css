@@ -1,7 +1,24 @@
+/*
+palette:
+blue - #61748C
+notgrey - #A99A90
+lightgrey - #ESDFCA
+darkgrey - #A69D89
+tan - #E0C7A3
+
+*/
+
+/* TODO fix this */
+html {
+	background-color: #ESDFCA;
+	font-family: helvetica;
+}
+
 .container {
-	background-color: grey;
+	background-color: #A69D89;
 	width: 450px;
 	height: 550px;
+	border: 2px solid black;
 	border-radius: 15px;
 }
 
@@ -14,9 +31,9 @@
 }
 
 .button {
-	border-radius: 5px;
-	border-color: black;
-	background-color: white;
+	border: 5px solid #000000;
+	border-radius: 10px;
+	background-color: #61748C;
 	font-weight: bold;
 	font-size: 2em;
 	cursor: pointer;

@@ -8,7 +8,7 @@
 			<div class="caption" style="margin-bottom: 50px;">
 				Let's split some bills!
 			</div>
-			<g:Button ui:field="button" styleName="button">Let's go!</g:Button>
+			<g:Button ui:field="btnContinue" styleName="button">Let's go!</g:Button>
 		</div>
 	</g:HTMLPanel>
 </ui:UiBinder>

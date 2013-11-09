@@ -1,7 +1,9 @@
 package com.ryangallo.gwt.billsplitter.client.view;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
@@ -21,6 +23,11 @@ public class StartViewImpl extends Composite implements StartView {
 	@Override
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
+	}
+
+	@UiHandler("btnContinue")
+	public void onClickBtnContinue(ClickEvent event) {
+		presenter.goToBillInput();
 	}
 
 }

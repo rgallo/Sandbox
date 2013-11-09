@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel styleName="container">
+		<div class="billInputView" style="text-align: center;">
+			<div class="prices" style="float: left; width: 25%;">
+				Price:
+				<g:FlowPanel ui:field="pnlPrices"/>
+			</div>
+			<div class="names" style="float: right; width: 75%;">
+				Item:
+				<g:FlowPanel ui:field="pnlNames"/>
+			</div>
+			<g:Button ui:field="btnTest">Test</g:Button>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>
